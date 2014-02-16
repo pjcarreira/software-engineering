@@ -295,7 +295,9 @@ This can be done step-by-step as follows:
 3. Press **CTRL+SHIFT+F** to format the entire file
 4. Right click on the buffer and select Apply Checkstyle fixes….
 5. Finally refactor the code, selecting the code you want to refactor and pressing **ALT+SHIFT+T**
+
 ___
+
 <a name="findbugs"></a>	
 #Eclipse Findbugs Plugin Setup
 ![](images/findbugs_logo.png)   
