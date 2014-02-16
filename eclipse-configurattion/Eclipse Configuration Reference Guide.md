@@ -1,12 +1,12 @@
 #Eclipse Configuration Reference Guide
-This guide describes how to properly instal and configure Eclipse for Java development. While replicating an Eclipse installion is relatively easy (as easy as copying the Eclipse installation directory to another machine), **replicating the configurations** by all members of a development team is not. This text aims at documenting a reference Eclipse configuration that can be shared and replicated within a team of programmers. 
+This guide describes how to properly instal and configure Eclipse for Java development. While replicating an Eclipse installion is relatively easy (as easy as copying the Eclipse installation directory to another machine), **replicating the configurations** by all members of a development team is not a simple task. This text aims at documenting a reference Eclipse configuration that can be shared and replicated within a team of programmers. 
 
 ##Step-by-step installation
 Setup the Eclipse Integrated Development Environment
 
 * [Eclipse Setup](#eclipse_setup)
 
-Setup the SVN version control and Google plugins
+Setup the SVN version control and Google Toolkit plugins
 
 * [Eclipse SVN plugin](#svn)
 * [Eclipse Google plugin](#gpe)
@@ -15,15 +15,15 @@ Setup of fundamental code quality plugins
 
 * [Eclipse CheckStyle plugin](#checkstyle)
 * [Eclipse FindBugs plugin](#findbugs)
+
+Setup of aditional productivity plugins
+
 * [Eclipse JAutodoc plugin](#jautodoc)
-
-Setup of aditional plugins
-
 * [Eclipse ObjectAid UML plugin](#objectaid)
 * [Eclipse JadClipse plugin](#jadclipse)
 * [Eclipse JavaCC plugin](#javacc)
 
-Manual configuration details of plugins
+Manually configure the Code Convention plugins 
 
 * [Creating a Checkstyle Configuration File](#checkstyle_conf_file)
 * [Manually Configuring the Code Formater](#code_formatter_manually)
