@@ -1,5 +1,5 @@
 #Eclipse Configuration Reference Guide
-This guide describes how to properly instal and configure Eclipse for Java development. While replicating an Eclipse installion is relatively easy (as easy as copying the Eclipse installation directory to another machine), **replicating the configurations** by all members of a development team is not a simple task. This text aims at documenting a reference Eclipse configuration that can be shared and replicated within a team of programmers. 
+This guide describes how to properly install and configure Eclipse for Java development. While replicating an Eclipse installation is relatively easy (as easy as copying the Eclipse installation directory to another machine), **replicating the configurations** by all members of a development team is not a simple task. This text aims at documenting a reference Eclipse configuration that can be shared and replicated within a team of programmers. 
 
 ##Step-by-step installation
 Setup the Eclipse Integrated Development Environment
@@ -16,7 +16,7 @@ Setup of fundamental code quality plugins
 * [Eclipse CheckStyle plugin](#checkstyle)
 * [Eclipse FindBugs plugin](#findbugs)
 
-Setup of aditional productivity plugins
+Setup of additional productivity plugins
 
 * [Eclipse JAutodoc plugin](#jautodoc)
 * [Eclipse ObjectAid UML plugin](#objectaid)
@@ -29,9 +29,9 @@ Manually configure the Code Convention plugins
 * [Manually Configuring the Code Formater](#code_formatter_manually)
 
 ##Configuration files
-This guide is accompanied by the **configuration files** for Eclipse and for some of the recomended plugins. These files **are meant to be synchronized** with the detailed configuration descriptions herein. In pparticular:
+This guide is accompanied by the **configuration files** for Eclipse and for some of the recommended plugins. These files **are meant to be synchronized** with the detailed configuration descriptions herein. In particular:
 
-* The file [*eclipse-java-formater-config.xml*](./) should relfect the detailed configuration descriptions found in the [detailed configuration of the Code Formater](#code_formatter_manually).
+* The file [*eclipse-java-formater-config.xml*](./) should reflect the detailed configuration descriptions found in the [detailed configuration of the Code Formater](#code_formatter_manually).
 
 * The files [*eclipse-checkstyle-config-src.xml*](./) and [*eclipse-checkstyle-config-src.xml*](./) should reflect the [detailed configurations of the Checkstyle](#checkstyle_conf_file) plugin.
 
@@ -50,7 +50,7 @@ The Eclipse Platform is our chosen building integrated development environments 
 
 
 ##Dependencies
-You must start by installing a Java Virtual Machine (JVM) to run Java programs and also the Java Development Kit that brings the java compiler as well as other tools required to develop Java programs. It is recomended that you set up **Oracle JDK (v1.7.0_51)** that will provide  the JDK along with the JVM.
+You must start by installing a Java Virtual Machine (JVM) to run Java programs and also the Java Development Kit that brings the java compiler as well as other tools required to develop Java programs. It is recommended that you set up **Oracle JDK (v1.7.0_51)** that will provide  the JDK along with the JVM.
 
 * Download and install **Oracle JDK JDK (v1.7.0_51)** from the [official site](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
 * Set the `JAVA_HOME` environment variable 
@@ -77,7 +77,7 @@ For additional details you may refer to the [official Eclipse installation instr
 Your Eclipse installation must be properly configured to help you avoid programming mistakes and improve your productivity. Check that:
 
 * [The Java Background Compiler appropriately configured](#eclipse_setup-background_compiler)
-* [The Code Formater is using the code formating standard file](#eclipse_setup-code_formatter)
+* [The Code Formater is using the code formatting standard file](#eclipse_setup-code_formatter)
 * [The Javadoc Checker is enabled](#eclipse_setup-javadoc_checker)
 * [The source code of the JDK is installed](#eclipse_setup-attach_source)
 
@@ -99,7 +99,7 @@ Eclipse provides an incremental compiler that runs in background (check **Projec
 ###Configure the Code Formatter
 The code formatter is an Eclipse component that formats (or indents) the code automatically when **CTRL+SHIFT+F** is pressed.
 
-Using the same code formating convention is **essential to achieve code readability** and avoid unnecessary conflicts when using version control. It also helps to frame developer ego---subsuming individual programmers stylistic preferences to the standard used by the group--- resulting in higher maintanability and faster code reviews. 
+Using the same code for mating convention is **essential to achieve code readability** and avoid unnecessary conflicts when using version control. It also helps to frame developer ego---subsuming individual programmers stylistic preferences to the standard used by the group--- resulting in higher maintainability and faster code reviews. 
 
 The following instructions show how to import a file with the set of necessary configurations. 
 
@@ -109,9 +109,9 @@ The following instructions show how to import a file with the set of necessary c
 
 Alternatively, you may also configure manually the Code formater by following the instructions about [Manually Configuring the Code Formatter](#code_formatter_manually).
 
-The formater is configured to follow the coding conventions of [SUNs/Oracle Java Coding Formating](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf) conventions and the infamous book [Elements of Java Style](http://www.cambridge.org/us/academic/subjects/computer-science/software-engineering-and-development/elements-java-style) book with minor adjustments. 
+The formater is configured to follow the coding conventions of [SUNs/Oracle Java Coding Formatting](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf) conventions and the infamous book [Elements of Java Style](http://www.cambridge.org/us/academic/subjects/computer-science/software-engineering-and-development/elements-java-style) book with minor adjustments. 
 
-Some adjustments to the original configuration are needed so that the code, after beeing formatted, is not rejected by the [Checkstyle plugin](#checkstyle).
+Some adjustments to the original configuration are needed so that the code, after being formatted, is not rejected by the [Checkstyle plugin](#checkstyle).
 
 <a name="eclipse_setup-javadoc_checker"></a>
 ###Enable the Javadoc Checker
