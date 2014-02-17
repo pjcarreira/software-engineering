@@ -1,4 +1,4 @@
-software-engineering
+Software Engineering 2013/14
 ====================
 Examples and auxiliary documentation for the Software Engineering course.
 
