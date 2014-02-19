@@ -1,0 +1,26 @@
+package pt.ist.phonebook.domain;
+
+class PhoneBook;
+
+class Person {
+  String name;
+}
+
+class Contact {
+  String name;
+  Integer phoneNumber;
+}
+
+relation PersonContainsContacts {
+  Person playsRole person;
+  Contact playsRole contact {
+    multiplicity *;
+  }
+}
+
+relation PhoneBookContainsPersons {
+  PhoneBook playsRole phoneBook;
+  Person playsRole person {
+    multiplicity *;
+  }
+}
