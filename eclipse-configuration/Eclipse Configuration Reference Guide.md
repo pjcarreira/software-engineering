@@ -71,7 +71,7 @@ Define the the `$ECLIPSE_HOME` system variable to point to to the Eclipse instal
 4. Run Eclipse (either by running `$ECLIPSE_HOME/eclipse.exe` or double-clicking the shortcut created above)
 5. Set the Workspace directory: When prompted for the workspace directory enter the value of `$HOME/workspace`.
 
-For additional details you may refer to the [official Eclipse installation instructions](http://wiki.eclipse.org/Eclipse/Installation).
+For additional details regarding the installation you may refer to the [official Eclipse installation instructions](http://wiki.eclipse.org/Eclipse/Installation).
 
 ##Configuring Eclipse
 Your Eclipse installation must be properly configured to help you avoid programming mistakes and improve your productivity. Check that:
@@ -164,11 +164,17 @@ Your Eclipse installation comprises a number of plugins. However some plugins th
 * [Eclipse JavaCC plugin](#javacc)
 	
 ##Troubleshooting your Eclipse Installation
-* Launch fails with the message `java.lang.NoClassDefFoundError: examples/MyClass. Exception in thread “main”`.
+* **Launch fails with the message `java.lang.NoClassDefFoundError: examples/MyClass. Exception in thread “main”`.**  
 This happens because the build process is failing. This type of failure can be caused by multiple reasons, yet the most common is because no *.class* is being generated. Go to *Window → Show view → Problems* and try correct the problems listed. Sometimes the problem is just a missing dependency among projects.
 
-* Eclipse doesn’t start and complains with Workspace is in use choose another one
+* **Eclipse doesn’t start and complains that the Workspace is in use.  **
 This happens when Eclipse crashes. Kill the java processes of Eclipse and try again. If the problem persists, go to the *.metadata* directory within the workspace directory and delete the .lock file.
+
+##Using Eclipse
+Refer online tutorials such as:
+
+* [Lars Vogella Eclipse Tutorial](http://www.vogella.com/tutorials/Eclipse/article.html)
+* [Official Eclipse Video Tutorials](http://eclipsetutorial.sourceforge.net/workbench.html)
 
 ____
 <a name="svn"></a>
@@ -191,7 +197,8 @@ Eclipse Subversive Plugin for SVN enables the integration of tools in Eclipse to
 6. Restart Eclipse
 7. After restarting Eclipse, go to **Window → Views** and the select **SVN**
 8. Select and install SVN connector 1.8.3 (Subversive SVN Connectors) 
-
+9. If the installation option does not show automatically, then insert: [http://community.polarion.com/projects/subversive/download/eclipse/3.0/kepler-site/
+](http://community.polarion.com/projects/subversive/download/eclipse/3.0/kepler-site/)
 ____
 <a name="gpe"></a>
 # Google Eclipse Plugin (GPE) Setup
@@ -214,7 +221,7 @@ Finally, also install the Google GWT plugin for browser (Chrome, Firefox, IE) [f
 
 ____
 <a name="checkstyle"></a>
-#Eclipse Checkstyle Plugin
+#Eclipse Checkstyle Plugin Setup
 ![](images/checkstyle_logo.png)   
 Checkstyle is a Java style checker and duplicate code detector. It can be run as a stand alone application (for example, to be incorporated in a build process) or as an Eclipse plugin. We strongly recommend to be always active so that coding mistakes are caught early.
 
