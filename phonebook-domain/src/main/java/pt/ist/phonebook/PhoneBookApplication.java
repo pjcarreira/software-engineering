@@ -10,7 +10,7 @@ import pt.ist.phonebook.domain.Person;
 
 
 /**
- * The Class PhoneBookApplication.
+ * The main class for the phone book application.
  */
 public final class PhoneBookApplication {
 
