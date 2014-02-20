@@ -1,0 +1,55 @@
+package es.examples.flightmanager.domain;
+
+class FlightManager;
+
+class Airport {
+    String iata;
+    String icao;
+    String city;
+    float cost;  
+}
+
+class Airline {
+    String name;
+    String iata;  
+}
+
+class Flight {
+    int id;
+    LocalTime time;
+}
+
+relation AirportIsOriginOfFlights {
+    Airport playsRole origin;
+    Flight playsRole originFlight {
+        multiplicity *;
+    }
+}
+
+relation AirportIsDestinationOfFlights {
+    Airport playsRole destination;
+    Flight playsRole destinationFlight {
+        multiplicity *;
+    }
+}
+
+relation AirlineHasFlights {
+    Airline playsRole airline;
+    Flight playsRole flight {
+        multiplicity *;
+    }
+}
+
+relation FlightManagerHasAirports {
+    FlightManager playsRole manager;
+    Airport playsRole airport {
+        multiplicity *;
+    }
+}
+
+relation FlightManagerHasAirlines {
+    FlightManager playsRole manager;
+    Airline playsRole airline {
+        multiplicity *;
+    }
+}
